@@ -26,9 +26,9 @@ docker compose up -d --build
 `http://localhost:3307`でphpMyAdminにアクセス
 
 
-- サーバー：`db`
-- ユーザー名：`root`
-- パスワード：`password`
+- サーバー：`db1`
+- ユーザー名：`root1`
+- パスワード：`password1`
 
 でログインできる。
 

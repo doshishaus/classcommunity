@@ -7,13 +7,13 @@ services:
       - ./www/:/var/www/html
     privileged: true
     ports:
-      - ${PHP_PORT}:80
+      - ${PHP_PORT}:81
     depends_on:
       - db
     environment:
-      - MYSQL_HOST=db
-      - MYSQL_USER=root
-      - MYSQL_PASSWORD=password
+      - MYSQL_HOST=db1
+      - MYSQL_USER=root1
+      - MYSQL_PASSWORD=password1
       - MYSQL_DATABASE=${MYSQL_DATABASE}
   db:
     image: mysql:latest
@@ -26,7 +26,7 @@ services:
       - MYSQL_ROOT_PASSWORD=password # rootユーザーのパスワード
       - TZ=Asia/Tokyo
     ports:
-      - ${MYSQL_PORT}:3306
+      - ${MYSQL_PORT}:3307
   phpmyadmin:
     container_name: admin
     image: phpmyadmin/phpmyadmin:latest
