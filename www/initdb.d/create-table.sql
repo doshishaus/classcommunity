@@ -1,4 +1,5 @@
-
+-- -- user_234201でログインする場合は、その前にrootでログインして権限を割り当てる必要がある
+-- ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
 -- 文字化け表示のために必要
 SET CHARACTER SET utf8mb4;
 

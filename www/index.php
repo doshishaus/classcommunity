@@ -3,8 +3,20 @@ include "lib/connect_db.php";
 
 try {
     $pdo = connect_db();
-} catch (\Throwable $th) {
-    //throw $th;
+
+    $sql_file_path = __DIR__ . '/initdb.d/create-table.sql';
+    if (file_exists($sql_file_path)) {
+        $sql = file_get_contents($sql_file_path);
+
+        // SQLを実行
+        $pdo->exec($sql);
+
+        echo "テーブルが正常に作成されました";
+    } else {
+        echo "SQLファイルが見つかりません: " . $sql_file_path;
+    }
+} catch (PDOException $e) {
+    echo "テーブル作成がなんかおかしいよ";
 }
 
 
@@ -13,7 +25,7 @@ try {
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
