@@ -1,3 +1,13 @@
+<?php
+include "lib/connect_db.php";
+
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,20 +20,13 @@
 
 <body>
     <header>
-
-        <button class="icon"><img src="./img/icon/setting.svg" alt="設定" class="icon-img"></button>
+        <h1>馬渕栄二郎</h1>
     </header>
     <main>
-        <h2></h2>
-
+        <p>テスト</p>
     </main>
     <footer>
-        <div class="icon-row">
-            <button class="icon"><img src="./img/icon/fork.svg" alt="" class="icon-img"></button>
-            <button class="icon"><img src="./img/icon/fork.svg" alt="" class="icon-img"></button>
-            <button class="icon"><img src="./img/icon/fork.svg" alt="" class="icon-img"></button>
-            <button class="icon"><img src="./img/icon/fork.svg" alt="" class="icon-img"></button>
-        </div>
+
     </footer>
 </body>
 
