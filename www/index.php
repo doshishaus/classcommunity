@@ -1,45 +1,35 @@
 <?php
-include "lib/connect_db.php";
+// include "lib/connect_db.php";
+// $sql = "CREATE TABLE personalwork (
+//     id INT AUTO_INCREMENT PRIMARY KEY,
+//     username VARCHAR(50) NOT NULL,
+//     groupid VARCHAR(50) NOT NULL,
+//     comment VARCHAR(255) NOT NULL
+//     );"
 
-try {
-    $pdo = connect_db();
+// try {
+//     $pdo = connect_db();
 
-    $sql_file_path = __DIR__ . '/initdb.d/create-table.sql';
-    if (file_exists($sql_file_path)) {
-        $sql = file_get_contents($sql_file_path);
+    
+// } catch (PDOException $e) {
+//     echo "テーブル作成がなんかおかしいよ";
+// }
 
-        // SQLを実行
-        $pdo->exec($sql);
-
-        echo "テーブルが正常に作成されました";
-    } else {
-        echo "SQLファイルが見つかりません: " . $sql_file_path;
-    }
-} catch (PDOException $e) {
-    echo "テーブル作成がなんかおかしいよ";
-}
-
-
+include "./inc/header.php";
 ?>
 
 
 
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>classcommunity</title>
-    <link rel="stylesheet" href="./style/style.css">
-</head>
 
 <body>
     <header>
         <h1>馬渕栄二郎</h1>
     </header>
     <main>
-        <p>テスト</p>
+        <div>
+            <p><a href="form.php">フォーム</a></p>
+            <p><a href="group.php">グループ</a></p>
+        </div>
     </main>
     <footer>
 
