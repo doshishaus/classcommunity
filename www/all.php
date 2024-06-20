@@ -3,6 +3,11 @@ include "./lib/connect_db.php";
 
 $sql = "SELECT * FROM team_work";
 $stmt = connect_db() -> query($sql);
+$all_stmt = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+usort($all_stmt, function($a, $b) {
+    return $a['g_num'] <=> $b['g_num'];
+});
+
 
 $sql1 = "SELECT * FROM personal_work";
 $stmt1 = connect_db() -> query($sql1);
@@ -14,7 +19,7 @@ include "./inc/header.php";
 ?>
 
 <body>
-    <?php foreach($stmt as $key => $value):?>
+    <?php foreach($all_stmt as $key => $value):?>
         <details>
             <summary><?= htmlspecialchars($array[$value["g_num"]-1])?>班　<?= htmlspecialchars($value["g_comment"])?></summary>
             <div>
