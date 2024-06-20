@@ -21,7 +21,8 @@ try {
         );";
 
     $stmt -> exec($sql1);
-    
+    echo "接続はうまくいきました。";
+    echo '<a href="./index.php">トップページ</<a>';
 } catch (PDOException $e) {
     echo "テーブル作成がなんかおかしいよ";
 }
