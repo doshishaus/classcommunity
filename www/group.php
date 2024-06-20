@@ -15,6 +15,7 @@ include "./inc/header.php";
     <?php foreach($stmt as $key => $value):?>
         <div class="List">
             <p><?= htmlspecialchars($value["username"]); ?></p>
+            <p><?= htmlspecialchars($value["choices"]); ?></p>
             <p><?= htmlspecialchars($value["g_num"])?>これデバック用</p>
             <p><?= htmlspecialchars($value["comment"])?></p>
         </div>
