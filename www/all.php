@@ -8,7 +8,7 @@ $sql1 = "SELECT * FROM personal_work";
 $stmt1 = connect_db() -> query($sql1);
 
 $all_comment = $stmt1 -> fetchAll(PDO::FETCH_ASSOC);
-
+$array = ["A","B","C","D","E","F","G","H"];
 
 include "./inc/header.php";
 ?>
@@ -16,7 +16,7 @@ include "./inc/header.php";
 <body>
     <?php foreach($stmt as $key => $value):?>
         <details>
-            <summary><?= htmlspecialchars($value["g_comment"])?></summary>
+            <summary><?= htmlspecialchars($array[$value["g_num"]-1])?>班　<?= htmlspecialchars($value["g_comment"])?></summary>
             <div>
                 <?php foreach($all_comment as $comment):?>
                     <?php if($value["g_num"] == $comment["g_num"]):?>
