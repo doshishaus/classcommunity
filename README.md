@@ -1,18 +1,26 @@
 # 環境構築
-ノーションリンク
-https://deserted-umbra-77c.notion.site/d691e1f1f27a4fa9a93452c645671b79
+フロント
+　HMTL,SCSS,JavaScript
+バック
+　php,Mysql
+インフラ
+　Docker
 
 ## 概要
+グループワーク促進ツール
 
 ## 環境構築
 
 `.env`ファイルに以下を記述
 
 ```env
-MYSQL_DATABASE=my_db
-MYSQL_PORT=3306
-ADMIN_PORT=3307
-PHP_PORT=9090
+PHP_PORT=8080
+MYSQL_DATABASE=classcommunity
+MYSQL_PORT=3307
+ADMIN_PORT=8081
+MYSQL_USER=root
+MYSQL_PASSWORD=password
+MYSQL_HOST=db
 ```
 
 ターミナルを起動して以下を実行（初回は「`--build`もつける」）
@@ -26,9 +34,9 @@ docker compose up -d --build
 `http://localhost:3307`でphpMyAdminにアクセス
 
 
-- サーバー：`db1`
-- ユーザー名：`root1`
-- パスワード：`password1`
+- サーバー：`db`
+- ユーザー名：`root`
+- パスワード：`password`
 
 でログインできる。
 
@@ -45,9 +53,7 @@ docker compose down
 - `/config`
   - PHP・Apache・MySQLの設定ファイルを保存するフォルダ
   - 基本触らない
-- `/initdb.d`
-  - コンテナ起動時にデーターベース内で実行するSQLファイルを保存するフォルダ
-  - バックエンドする人以外は基本触らない
+
 - `/www`
   - PHP・HTMLなどアプリのプログラムを保存するフォルダ
   - 機能や画面ごとにフォルダ分けしていく
@@ -56,8 +62,6 @@ docker compose down
       - CSSファイルを保存する
     - `/js`
       - JSファイルを保存する
-    - `/api`
+    - `/lib`
       - フォームの送信先の処理をするPHPを保存する
-    - `/components`
-      - PHPのテンプレートで使い回しできる部分をコンポーネント化したものを保存する
-  - `/機能名/index.php`のように命名する
+  - 管理者はsetup.phpを最初に立ち上げることでテーブル作成

@@ -1,7 +1,5 @@
 /* 大元の設定 */
-body{
-    position: relative;
-}
+
 /* 大元の設定終了 */
 
 
@@ -9,9 +7,7 @@ body{
 
 /* ヘッダー終了 */
 /* メイン開始 */
-.List{
-    border: 3px solid black;
-}
+
 
 
 /* メイン終了 */

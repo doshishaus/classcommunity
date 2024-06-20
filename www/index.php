@@ -1,20 +1,4 @@
 <?php
-// include "lib/connect_db.php";
-// $sql = "CREATE TABLE personalwork (
-//     id INT AUTO_INCREMENT PRIMARY KEY,
-//     username VARCHAR(50) NOT NULL,
-//     groupid VARCHAR(50) NOT NULL,
-//     comment VARCHAR(255) NOT NULL
-//     );"
-
-// try {
-//     $pdo = connect_db();
-
-    
-// } catch (PDOException $e) {
-//     echo "テーブル作成がなんかおかしいよ";
-// }
-
 include "./inc/header.php";
 ?>
 

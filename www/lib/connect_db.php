@@ -12,7 +12,7 @@ function connect_db(){
         ];
 
         $pdo = new PDO($dsn,$username,$password,$options);
-        echo "データベースに接続しました";
+        // echo "データベースに接続しました";
 
         return $pdo;
     }catch(PDOException $e){
