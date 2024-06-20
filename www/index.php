@@ -12,7 +12,7 @@ include "./inc/header.php";
     <main>
         <div>
             <p><a href="form.php">フォーム</a></p>
-            <p><a href="group.php">グループ</a></p>
+            <p><a href="all.php">全体コメント</a></p>
         </div>
     </main>
     <footer>
