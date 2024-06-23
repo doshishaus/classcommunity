@@ -1,1 +1,75 @@
-/*# sourceMappingURL=group.css.map */
+.gnum-center {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.group-list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.group-list {
+  margin: 2.5%;
+  padding: 2%;
+  width: 90%;
+  border-radius: 20px;
+}
+
+#border-1 {
+  border: 3px solid red;
+  background-color: rgba(255, 0, 0, 0.312);
+}
+
+#border-2 {
+  border: 3px solid blue;
+  background-color: rgba(0, 0, 255, 0.312);
+}
+
+#border-3 {
+  border: 3px solid green;
+  background-color: rgba(0, 255, 0, 0.312);
+}
+
+#border-4 {
+  border: 3px solid rgb(226, 200, 0);
+  background-color: rgba(226, 200, 0, 0.312);
+}
+
+.form-title {
+  padding-top: 1rem;
+}
+
+.link {
+  padding: 1rem;
+  border: pink;
+  border-radius: 20px;
+  background-color: rgba(255, 192, 203, 0.5);
+}
+
+.none {
+  display: none;
+}
+
+.comment-textarea {
+  display: block;
+  width: 80%;
+  height: 6rem;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  background-color: rgba(118, 194, 241, 0.4196078431);
+  border: 2px solid #76C1F1;
+  border-radius: 20px;
+}
+
+.form-button {
+  padding: 0.5rem 2rem;
+  background-color: rgba(255, 192, 203, 0.5);
+  border: 2px solid pink;
+  border-radius: 20px;
+}
+
+.form-button:hover, .link:hover {
+  background-color: pink;
+  border: 2px solid rgba(255, 192, 203, 0.5);
+}/*# sourceMappingURL=group.css.map */

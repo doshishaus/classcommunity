@@ -1,23 +1,33 @@
-a{
-    text-decoration: none;
-}
-// .wait-benchmark{
-//     width: 100vw;
-//     height: 100vh;
-// }
+
 .wait-button-layout{
-    margin:35vh 20vw 0;
-    height: 20vh;
+    margin:20vh 15vw 0;
+    padding: 1%;
+    height: auto;
 
     background-color: #A8E792;
 
     border-radius: 20px;
+
 }
 .wait-button-a{
+    display: block;
     width: 100%;
     height: auto;
+    padding: 13% 0;
+
 }
 .wait-button-color{
+    margin-top: 15px;
+    padding: 5px;
     
     background-color: #A8E792;
+
+}
+.wait-button-inner{
+    text-align: center;
+    height: 100%;
+}
+.wait-button-right{
+    width: 10%;
+    height: auto;
 }

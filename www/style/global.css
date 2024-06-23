@@ -6,10 +6,37 @@ body {
   font-weight: bolder;
 }
 
-/* 大元の設定終了 */
-/* ヘッダー開始 */
-/* ヘッダー終了 */
-/* メイン開始 */
-/* メイン終了 */
-/* フッター開始 */
-/* フッター終了 *//*# sourceMappingURL=global.css.map */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  margin: 1%;
+  padding: 1%;
+  border: 15px solid pink;
+  border-radius: 20px;
+}
+
+.title-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.title-header-p {
+  padding: 1rem;
+  background-color: rgba(255, 192, 203, 0.5);
+  border: pink;
+  border-radius: 20px;
+}
+
+/* 大元の設定終了 *//*# sourceMappingURL=global.css.map */
