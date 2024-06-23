@@ -1,15 +1,21 @@
 * {
-    @include box-sizing;
-    width: 100%;
+  @include box-sizing;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-stack;
+  background-color: rgb(130, 193, 255);
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+.links-container {
+  display: flex;
+  gap: 30px;
+
+  p {
     margin: 0;
-    padding: 0;
   }
-  
-  body {
-    font-family: $font-stack;
-    background-color: rgb(130, 193, 255);
-    color: #2c3e50;
-    line-height: 1.6;
-  }
-  
-  
+}

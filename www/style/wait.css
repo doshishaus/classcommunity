@@ -2,15 +2,18 @@ a {
   text-decoration: none;
 }
 
-.wait-benchmark {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
+.wait-button-layout {
+  margin: 35vh 20vw 0;
+  height: 20vh;
+  background-color: #A8E792;
+  border-radius: 20px;
 }
 
-.wait-button-background {
-  position: relative;
+.wait-button-a {
+  width: 100%;
+  height: auto;
+}
+
+.wait-button-color {
   background-color: #A8E792;
-  top: 40;
-  left: 40;
 }/*# sourceMappingURL=wait.css.map */
