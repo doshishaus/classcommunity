@@ -6,7 +6,7 @@ include "./inc/header.php";
 
 <body>
     <header>
-        <h1>馬渕栄二郎</h1>
+        <h1>評論文を書こう</h1>
     </header>
     <main>
         <div>

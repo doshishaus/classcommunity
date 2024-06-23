@@ -14,6 +14,6 @@ $stmt -> execute($params);
 // echo "<p>グループID" . $g_num . "</p>";
 // echo "<p>コメント" . $comment . "</p>";
 
-header("Location:../all.php?g_num=",$g_num);
+header("Location:../wait.php");
 exit();
 ?>
