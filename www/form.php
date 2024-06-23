@@ -7,7 +7,8 @@ $stmt = connect_db()->query($sql);
 
 include "./inc/header.php";
 ?>
-
+<link rel="stylesheet" href="./style/form.css">
+</head>
 <body>
     <form action="./lib/send.php" method="post">
         <input type="text" id="username" name="username">

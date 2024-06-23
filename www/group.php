@@ -11,6 +11,8 @@ $array = ["A","B","C","D","E","F","G","H"];
 
 include "./inc/header.php";
 ?>
+<link rel="stylesheet" href="./style/group.css">
+</head>
 <body>
     <p><?= htmlspecialchars($array[$g_num-1]);?>班</p> 
     <?php foreach($stmt as $key => $value):?>

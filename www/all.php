@@ -17,7 +17,8 @@ $array = ["A","B","C","D","E","F","G","H"];
 
 include "./inc/header.php";
 ?>
-
+<link rel="stylesheet" href="./style/all.css">
+</head>
 <body>
     <?php foreach($all_stmt as $key => $value):?>
         <details>
