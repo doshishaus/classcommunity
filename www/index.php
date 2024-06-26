@@ -9,7 +9,7 @@ include "./inc/header.php";
         <div class="square_1">
             <img src="/Users/h.s/Desktop/classcommunity/www/img/Form_template_inkscape.svg" alt="FORM">
             <header>
-                <h1>評論文をかこう</h1>
+                <h1>評論文をかこう is god</h1>
             </header>
             <main>
                 <div class="links-container">
