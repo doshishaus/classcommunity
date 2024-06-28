@@ -1,6 +1,39 @@
+summary::-webkit-details-marker {
+  display: none;
+}
+
 .accordion-list {
-  margin: 1rem;
+  margin: 1rem 6rem;
   padding: 1rem;
-  border: #76C1F1;
+  border: 3px solid #76C1F1;
   border-radius: 20px;
+}
+.accordion-list .accordion-list-summary::marker {
+  display: none;
+}
+.accordion-list .accordion-list-span {
+  padding: 1rem;
+  background-color: #76C1F1;
+  border-radius: 20px;
+}
+.accordion-list .accordion-list-border {
+  margin-bottom: 5px;
+  display: flex;
+  border: 1px solid #76C1F1;
+  border-radius: 20px;
+}
+.accordion-list .accordion-list-main {
+  margin: 2rem 2rem 0;
+}
+.accordion-list .accordion-list-main .accordion-list-main-name {
+  margin: 0.5rem;
+  -webkit-text-decoration: underline dotted #76C1F1;
+          text-decoration: underline dotted #76C1F1;
+}
+.accordion-list .accordion-list-main .accordion-list-main-content {
+  margin: 0.5rem 2.5rem;
+}
+
+.accordion-list-top {
+  margin-top: 2rem;
 }/*# sourceMappingURL=all.css.map */
