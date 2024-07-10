@@ -59,9 +59,9 @@ header h1 {
 }
 .links-container p {
   margin: 0;
-  font-size: 100px;
-  width: 600px;
-  height: 400px;
+  font-size: 15%;
+  width: 30%;
+  height: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
